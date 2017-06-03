@@ -18,7 +18,7 @@ def my_abs2(x):
 # print my_abs2('-4')
 
 import math
-
+#默认参数
 def move(x, y, step, angle=0):
     nx = x + step * math.cos(angle)
     ny = y - step * math.sin(angle)
