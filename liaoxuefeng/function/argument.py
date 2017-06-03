@@ -37,3 +37,8 @@ person('Michael', 30) #name: Michael age: 30 other: {}
 person('Adam', 45, gender='M', job='Engineer') #name: Adam age: 45 other: {'gender': 'M', 'job': 'Engineer'}
 kw = {'city': 'Beijing', 'job': 'Engineer'}
 person('Jack', 24, **kw) #name: Jack age: 24 other: {'city': 'Beijing', 'job': 'Engineer'}
+
+#参数组合
+def func(a, b, c=0, *args, **kw):
+    print 'a =', a, 'b =', b, 'c =', c, 'args =', args, 'kw =', kw
+func(1, 2, 3, 'a', 'b', x=99)
